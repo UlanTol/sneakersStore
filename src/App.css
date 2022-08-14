@@ -1,0 +1,434 @@
+.font {
+  font-weight: 700;
+  font-size: xx-large;
+  position: absolute;
+  color: rgba(24, 24, 24, 0.289);
+}
+.fronts {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@import url("https://fonts.googleapis.com/css?family=Kanit");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+#innerpage {
+  margin: 0 0px;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(22, 22, 22, 0.206),
+      rgba(4, 4, 4, 0.192)
+    ),
+    url("./components/assets/inerren.jpg");
+  /* url("./components/assets/nowhite.jpg"); */
+  background-position: center;
+  background-size: cover;
+  /* padding-left: 8%;
+  padding-right: 8%; */
+  box-sizing: border-box;
+}
+.innerpage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.row {
+  display: flex;
+  height: 88%;
+}
+.columnchik {
+  /* margin-top: 350px; */
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.h1 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+.p {
+  color: #fff;
+  font-size: 7px;
+  line-height: 15px;
+}
+.buttonchik {
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 440px;
+}
+.buttonchik:hover {
+  background-color: black;
+  color: #fff;
+}
+.card {
+  /* background-color: rgb(255, 255, 255); */
+  margin: 0;
+  width: 200px;
+  height: 140px;
+  display: flex;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+.card1 {
+  background-image: url("https://raw.githubusercontent.com/luisDanielRoviraContreras/img/master/files/39.png");
+}
+.card2 {
+  background-image: url("https://raw.githubusercontent.com/luisDanielRoviraContreras/img/master/files/23.png");
+}
+.card3 {
+  background-image: url("https://raw.githubusercontent.com/luisDanielRoviraContreras/img/master/files/8.png");
+}
+/* .card4 {
+  background-image: url("https://raw.githubusercontent.com/luisDanielRoviraContreras/img/master/files/50.png");
+  object-fit: contain;
+} */
+.card:hover {
+  transform: translateY(-10px);
+}
+h5 {
+  color: rgb(3, 3, 3);
+}
+
+.landing-page-title {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.page-subtitle {
+  font-size: 1.3125rem;
+  color: var(--orange);
+  text-transform: uppercase;
+}
+#centerimg {
+  margin-left: 150px;
+}
+@media screen and (min-width: 760px) {
+  body {
+    font-size: 1.125rem;
+  }
+  .landing-page-title {
+    font-size: 3.5rem;
+  }
+  page-subtitle {
+    font-size: 1.75rem;
+  }
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.flex,
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column {
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.landing-page {
+  background-image: url("https://images.complex.com/complex/image/upload/c_scale,f_auto,q_auto,w_1920/fl_lossy,pg_1/steph-curry_fuq88q.jpg?fimg-client-default");
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  margin-bottom: 2rem;
+  transition: transform 0.5s;
+  /* background: rgba(0, 0, 0, 0.65); */
+}
+
+.landing-page2 {
+  background-image: url("https://nypost.com/wp-content/uploads/sites/2/2022/05/moolah-kicks-08.jpg");
+  height: 30vh;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 520px) {
+  .wrapper {
+    max-width: 420px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .wrapper {
+    max-width: 740px;
+  }
+  .flex {
+    flex-direction: row;
+  }
+
+  .landing-page {
+    height: 200px;
+    width: 60vw;
+    margin-right: 20px;
+  }
+  .landing-page2 {
+    background-position: center;
+    background-size: cover;
+    width: 70vw;
+    /* margin-right: 20px; */
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .contai {
+    display: flex;
+    flex-direction: column;
+  }
+  #centerimg {
+    display: none;
+  }
+}
+@media screen and (max-width: 430px) {
+  .landing-page {
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .landing-page {
+    display: none;
+  }
+  .landing-page2 {
+    background-image: url("https://nypost.com/wp-content/uploads/sites/2/2022/05/moolah-kicks-08.jpg");
+
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+  }
+  .row,
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .col {
+    margin: 0 20vw;
+  } */
+  .card {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    display: none;
+  }
+}
+/* General styles */
+
+body {
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+main {
+  margin: 30px 20px;
+}
+/* .darkener {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  padding-bottom: 1.5rem;
+} */
+
+.landing2 {
+  transition: transform 0.5s;
+  background-image: url("http://cdn.shopify.com/s/files/1/0099/5232/9785/products/cz1929-100-2_grande.jpg?v=1632887762");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 400px;
+  margin-bottom: 2rem;
+  margin: 20px;
+  margin-left: 50px;
+}
+.landing1 {
+  transition: transform 0.5s;
+  background-image: url("http://cdn.shopify.com/s/files/1/0221/8010/2244/products/Untitleddesign_1_grande.png?v=1654170664");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 400px;
+  margin-bottom: 2rem;
+  margin: 20px;
+  text-align: justify;
+}
+.landing3 {
+  transition: transform 0.5s;
+  background-image: url("https://cdn.shopify.com/s/files/1/0221/8010/2244/products/Untitleddesign_3_600x.jpg?v=1655738089");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 400px;
+  margin-bottom: 2rem;
+  margin: 20px;
+}
+@media screen and (min-width: 760px) {
+  .landing-page {
+    height: initial;
+    min-height: 100vh;
+    margin-bottom: 0;
+  }
+
+  .flex-column {
+    justify-content: center;
+  }
+
+  .top-logo,
+  .landing-page .page-subtitle {
+    margin-bottom: auto;
+  }
+
+  .landing-page-title {
+    margin: 2rem 0 0;
+  }
+
+  .landing-page .page-subtitle {
+    margin-top: 1rem;
+  }
+}
+.landing-page2 {
+  height: initial;
+  min-height: 100vh;
+  margin-bottom: 0;
+}
+
+.flex-column2 {
+  justify-content: center;
+}
+
+.top-logo2,
+.landing-page2 .page-subtitle2 {
+  margin-bottom: auto;
+}
+
+.landing-page-title2 {
+  margin: 2rem 0 0;
+}
+
+.landing-page2 .page-subtitle2 {
+  margin-top: 1rem;
+}
+.desk {
+  background-image: url("https://elexiabbott.files.wordpress.com/2020/07/2brown-wood-texture-and-background-1170x780-1-2.jpg");
+}
+.contai {
+  margin: 0 20px 30px;
+  font-size: 0;
+  max-width: 98vw;
+  max-heigth: 380px;
+  /* background-color: #000; */
+  /* display: grid;
+   */
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "r1-c1 r1-c1 r1-c3 r1-c4"
+    "r1-c1 r1-c1 r2-c3 r2-c4"
+    "r3-c1 r3-c2 r2-c3 r3-c4";
+}
+
+.r3-c1 :hover {
+  grid-area: r1-c1;
+  transform: translateY(-10px);
+}
+
+.r3-c2 :hover {
+  grid-area: r1-c1;
+  transform: translateY(-10px);
+}
+
+.r1-c3 :hover {
+  grid-area: r1-c1;
+  transform: translateY(-10px);
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  display: flex;
+}
+.bg img {
+  width: 30%;
+  max-width: 200px;
+  margin: auto;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .contai {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 28px 28px;
+    grid-template-areas:
+      "r1-c1 r1-c1 r1-c3"
+      "r1-c1 r1-c1 r2-c3"
+      "r3-c1 r3-c2 r2-c3"
+      "r1-c4 r2-c4 r3-c4";
+  }
+  .r1-c1 {
+    min-width: 346px;
+    min-height: 346px;
+  }
+}
+
+@media all and (max-width: 763px) and (orientation: portrait) {
+  .contai {
+    grid-template-columns: 1fr 1fr;
+    gap: 6vw 5vw;
+    grid-template-areas:
+      "r1-c1 r1-c1"
+      "r3-c1 r3-c2"
+      "r1-c4  r1-c3"
+      "r2-c3 r3-c4"
+      "r2-c3 r2-c4";
+  }
+
+  .bg {
+    width: 98vw;
+    height: 98vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  .h {
+    display: none;
+  }
+}

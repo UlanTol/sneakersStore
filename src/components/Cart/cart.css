@@ -1,0 +1,297 @@
+.im {
+  max-width: 100%;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  color: #f58551;
+}
+
+.bt {
+  background-color: #16cc9b;
+  border: 2px solid #16cc9b;
+  color: #ffffff;
+  transition: all 0.25s linear;
+  cursor: pointer;
+}
+
+.bt:hover {
+  background-color: #f58551;
+  border-color: #f58551;
+}
+
+.bt:hover::after {
+  right: -5px;
+}
+
+.bt:focus {
+  outline: none;
+}
+
+.ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+input {
+  transition: all 0.25s linear;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input {
+  outline: none;
+}
+.containe {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.conta {
+  margin-bottom: 80px;
+  width: 40%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.products {
+  border-top: 1px solid #ddd;
+}
+
+.products > li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.rowq {
+  position: relative;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.colq,
+.quantityq,
+.removeqq {
+  float: left;
+}
+
+.colq.left {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.colq.right {
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 30px);
+}
+
+.detailq {
+  padding: 0 0.5rem;
+  line-height: 2.2rem;
+}
+
+.detailq .nameq {
+  font-size: 1.2rem;
+}
+
+.detailq .descriptionq {
+  color: #7d7d7d;
+  font-size: 1rem;
+}
+
+.detailq .priceq {
+  font-size: 1.5rem;
+}
+
+.quantityq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.removeq {
+  width: 50%;
+  text-align: center;
+}
+
+.removeq svg {
+  width: 60px;
+  height: 60px;
+}
+
+.quantityq > input {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  left: calc(50% - 30px);
+  background: #fff;
+  border: 2px solid #ddd;
+  color: #7f7f7f;
+  text-align: center;
+  font: 600 1.5rem Helvetica, Arial, sans-serif;
+}
+
+.quantityq > input:hover,
+.quantityq > input:focus {
+  border-color: #f58551;
+}
+
+.closeq {
+  fill: #7d7d7d;
+  transition: color 150ms linear, background-color 150ms linear,
+    fill 150ms linear, 150ms opacity linear;
+  cursor: pointer;
+}
+
+.closeq:hover {
+  fill: #f58551;
+}
+
+/* --- SUMMARY --- */
+.promotionq,
+.summaryq,
+.chec {
+  float: left;
+  width: 70%;
+  margin-top: 1.5rem;
+}
+.chec {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.total {
+  display: flex;
+  justify-content: center;
+}
+.promotionq > label {
+  float: left;
+  width: 70%;
+  margin-bottom: 1rem;
+}
+
+.promotionq > input {
+  float: left;
+  width: 70%;
+  font-size: 1rem;
+  padding: 0.5rem 0 0.5rem 1.8rem;
+  border: 2px solid #16cc9b;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.promotionq:hover > input {
+  border-color: #f58551;
+}
+
+.promotionq > button {
+  float: left;
+  width: 20%;
+  padding: 0.5rem 0;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.promotionq:hover > button {
+  border-color: #f58551;
+  background-color: #f58551;
+}
+
+.promotionq > button::after {
+  content: "\276f";
+  font-size: 1rem;
+}
+
+.summaryq {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.summaryq ul li {
+  padding: 0.5rem 0;
+}
+
+.summaryq ul li span {
+  display: inline-block;
+  width: 30%;
+}
+
+.summaryq ul li.total {
+  font-weight: bold;
+}
+
+.chec {
+  margin: 30px 0;
+  text-align: right;
+}
+
+.chec > button {
+  font-size: 1.2rem;
+  padding: 0.8rem 2.8rem;
+  border-radius: 1.5rem;
+}
+
+.empty-product {
+  text-align: center;
+}
+
+.empty-product > button {
+  font-size: 1.3rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+@media all and (max-width: 599px) {
+  .quantityq > input {
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 20px);
+  }
+
+  .removeq svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .promotionq {
+    display: flex;
+    display: none;
+  }
+}
+@media screen and (max-width: 820px) {
+  .thumbnailq img {
+    width: 200px;
+  }
+  .detailq {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .thumbnailq img {
+    width: 100px;
+    height: 100px;
+  }
+}
